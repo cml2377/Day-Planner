@@ -6,11 +6,11 @@ This is a simple calendar app that allows the user to save events for each hour 
 
 This is an in-browser application that saves your events/tasks into your local storage. It goes day-by-day, hour-by-hour. Click on an empty hour slot to fill in your event title/meeting, and then click save.
 
-[Click here to check it out] (https://cml2377.github.io/Day-Planner/)
+[Click here to check it out](https://cml2377.github.io/Day-Planner/)
 
 ## Running the tests
 
-[Screenshot1] Placeholder for Screenshots here
+[Screenshot1]Placeholder for Screenshots here
 
 ## Built With
 
