@@ -1,0 +1,1 @@
+moment().format("dddd, MMM Do YYYY, h:mm a");
