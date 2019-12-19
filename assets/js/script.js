@@ -4,16 +4,17 @@ $(document).ready(function () {
     var currentDayEl = $("#currentDay");
 
     currentDayEl.text(moment().format('MMMM Do YYYY, h:mm:ss a'));
+    var inputBlockEl = $(".time-block");
+    var saveBtns = $(".saveBtn");
+    var data = {};
 
     var update = function () {
         currentDayEl.text(moment().format('MMMM Do YYYY, h:mm:ss a'));
 
         var now = moment().hour(); //returns 0 through 23, aka military time 
-
-        var inputBlockEl = $(".inputBlock");
-        //if block is < #; then change class to past            
-        //if block == #; then change class to present
-        //if block > #, then change class to future
+        //if inputblockEl is < now; then change class to past            
+        //if inputblockEl == now; then change class to present
+        //if inputblockEl > now, then change class to future
 
         //Then, we calculate the time of day with moment, and then change the classes of the rows accordingly.
 
@@ -29,21 +30,22 @@ $(document).ready(function () {
     // we're just gonna check every SECOND.
     setInterval(update, 1000);
 
-
-
-
-
-
-
-
-
-
-
-    //When user clicks on an empty input box, it should allow user to populate it with a string. 
-
     //When the user clicks on the save icon, it should save their string to local storage.
 
+    saveBtns.on("click", function (event) {
+        //save userInput as a string to local storage. with THIS button!
+        var button = $(this);
+        var textArea = $("#description" + button.attr("data-time"));
+        var userText = textArea.val();
+        localStorage.setItem(data[textArea.attr.text("id", userText)]);
+    });
 
+    //site should load any saved data from localStorage.
+    textArea = JSON.parse(localStorage.userText);
 
+    //clear button clears local storage.
+    $("#clear").on("click", function () {
+        localStorage.clear();
+    });
 
 });
