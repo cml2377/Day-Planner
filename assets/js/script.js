@@ -35,9 +35,12 @@ $(document).ready(function () {
     saveBtns.on("click", function (event) {
         //save userInput as a string to local storage. with THIS button!
         var button = $(this);
+        //textArea locates the specific description element that user filled in text with.
         var textArea = $("#description" + button.attr("data-time"));
+        //userText is the actual text being saved
         var userText = textArea.val();
-        localStorage.setItem(data[textArea.attr.text("id", userText)]);
+        //this is supposed to set the text area text to that specific textArea and store it in an arry of objects called data.
+        localStorage.setItem(data[textArea.attr("id", userText)]);
     });
 
     //site should load any saved data from localStorage.
