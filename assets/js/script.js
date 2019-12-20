@@ -6,7 +6,6 @@ $(document).ready(function () {
     currentDayEl.text(moment().format('MMMM Do YYYY, h:mm:ss a'));
     var inputBlockEl = $(".time-block");
     var saveBtns = $(".saveBtn");
-    var data = {};
 
     var update = function () {
         currentDayEl.text(moment().format('MMMM Do YYYY, h:mm:ss a'));

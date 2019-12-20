@@ -4,14 +4,6 @@ body {
     line-height: 1;
   }
   
-  textarea {
-    background: transparent;
-    border: none;
-    color: #000000;
-    border-left: 1px solid black;
-    padding: 10px;
-  }
-  
   .jumbotron {
     text-align: center;
     background-color: transparent;
@@ -34,12 +26,22 @@ body {
   }
 
   .description {
+    vertical-align: top;
+    background: transparent;
+    border: none;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 10px;
     white-space: pre-wrap;
-    font-size: 32px;
-    margin:none;
+    font-size: 24px;
     height: 100%;
     width: 100%;
-    box-sizing:border-box;
+    resize: none;
+    box-sizing: border-box;
+    position: relative;
+    left: 0px;
+    top: -33px;
+    outline: none;
   }
   
   .row {

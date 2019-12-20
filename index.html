@@ -19,6 +19,7 @@
         <p class="lead">A simple calendar app for scheduling your work day</p>
         <p id="currentDay" class="lead"></p>
         <button class="btn btn-dark" id="clearBtn">Clear Local Storage</button>
+        <!--Added a toast that pops up when you click on the save icon-->
         <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;" id="toastBody">
             <div class="toast" style="position: absolute; top: 0; right: 0;">
                 <div class="toast-header">
@@ -143,8 +144,6 @@
             </div>
         </div>
     </div>
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
