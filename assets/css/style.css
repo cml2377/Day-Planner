@@ -11,6 +11,7 @@ body {
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
+    box-sizing:border-box;
   }
   
   .jumbotron {
@@ -21,17 +22,16 @@ body {
     border-bottom: 10px solid black;
   }
 
-  #clear {
-    padding: px;
+  .col {
+    padding: 0px;
   }
   
   .description {
     white-space: pre-wrap;
-  }
-  
-  .time-block{
-    text-align: center;
-    border-radius: 15px;
+    width: 90%;
+    font-size: 32px;
+    padding:1%;
+    margin:none;
   }
   
   .row {
