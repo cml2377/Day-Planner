@@ -29,11 +29,13 @@ $(document).ready(function () {
     }
     // we're just gonna check every SECOND.
     setInterval(update, 1000);
-
+    $('.toast').toast(500);
     //When the user clicks on the save icon, it should save their string to local storage.
 
     saveBtns.on("click", function (event) {
         //save userInput as a string to local storage. with THIS button!
+        $(".toast").toast('show');
+
         var button = $(this);
 
         var btnData = $(this).attr("data-time");
